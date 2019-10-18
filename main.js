@@ -10,7 +10,7 @@
  * @package    Sports Ticker
  * @author     James McCarthy <james@jmgalleries.com>
  * @copyright  2019 James McCarthy
- * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license    GNU GENERAL PUBLIC LICENSE
  * @version    0.1
  * @since      function available since Release 0.1   
  * @created    October 18, 2019   
