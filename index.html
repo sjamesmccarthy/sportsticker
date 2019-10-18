@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ticker: jM Galleries.Com</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body onLoad="API_get_ticker()">
+<div class="ticker--outer">
+
+    <div class="ticker--inner">
+        <p class="ticker--mlb ticker"><span>MLB ticker--data</span></p>
+        <p class="ticker--nfl ticker"><span>NFL ticker--data</span></p>
+    </div>
+
+    <div class="ticker--controls">
+        <button id="startNFL">START NFL</button>
+        <button id="stopNFL" class="btn--stop mr-32">STOP NFL</button> 
+        <button id="startMLB">START MLB</button>
+        <button id="stopMLB" class="btn--stop mr-32">STOP MLB</button> 
+        <button id="reload-a">RELOAD DEFAULT DATA SET</button>
+        <button id="reload-b">RELOAD ALT DATA SET</button>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script>
+    $(document).ready(function () {
+
+        /* Controls */
+        $('#stopNFL').on("click", function() {
+            $('.ticker--nfl span').css('animation-play-state','paused');
+        });
+
+        $('#stopMLB').on("click", function() {
+            $('.ticker--mlb span').css('animation-play-state','paused');
+        });
+
+        $('#startNFL').on("click", function() {
+            $('.ticker--nfl span').css('animation-play-state','running');
+        });
+
+        $('#startMLB').on("click", function() {
+            $('.ticker--mlb span').css('animation-play-state','running');
+        });
+        
+        $('#reload-a').on("click", function() {
+            $('.ticker--nfl span').empty();
+            $('.ticker--mlb span').empty();
+            API_get_ticker('data');
+        });
+
+        $('#reload-b').on("click", function() {
+            $('.ticker--nfl span').empty();
+            $('.ticker--mlb span').empty();
+            API_get_ticker('data_2');
+        });
+
+    });
+</script>
+
+</body>
+</html>

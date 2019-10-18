@@ -1,0 +1,72 @@
+[
+    {
+        "id": 6,
+        "name": "MLB",
+        "provider_value": "sr:tournament:109",
+        "matches": [
+            {
+                "id": 20599,
+                "name": "Boston Red Sox VS New York Yankees",
+                "schedule": "2019-08-27T23:05:00+00:00",
+                "home_abbreviation": "BOS",
+                "away_abbreviation": "NYY",
+                "odds": {
+                    "home_ml": -147,
+                    "favourite_team": "BOS",
+                    "spread": "1.5",
+                    "total": "10",
+                    "away_ml": "+125"
+                }
+            },
+            {
+                "id": 20610,
+                "name": "Oakland A\\'s VS Boston Red Sox",
+                "schedule": "2019-08-27T23:05:00+00:00",
+                "home_abbreviation": "OAK",
+                "away_abbreviation": "BOS",
+                "odds": {
+                    "total": "9.5",
+                    "home_ml": -333,
+                    "favourite_team": "BOS",
+                    "spread": "1.5",
+                    "away_ml": "+265"
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "NFL",
+        "provider_value": "sr:tournament:233",
+        "matches": [
+            {
+                "id": 20426,
+                "name": "Las Vegas Raiders VS Carolina Panthers",
+                "schedule": "2019-08-29T23:00:00+00:00",
+                "home_abbreviation": "CAR",
+                "away_abbreviation": "LAS",
+                "odds": {
+                    "total": "33",
+                    "home_ml": "+155",
+                    "away_ml": -175,
+                    "favourite_team": "LAS",
+                    "spread": "3.5"
+                }
+            },
+            {
+                "id": 20429,
+                "name": "Denver Broncos VS New England Patroits",
+                "schedule": "2019-08-29T23:00:00+00:00",
+                "home_abbreviation": "DEN",
+                "away_abbreviation": "PAT",
+                "odds": {
+                    "favourite_team": "PAT",
+                    "spread": "4",
+                    "total": "35",
+                    "home_ml": -200,
+                    "away_ml": "+170"
+                }
+            }
+        ]
+    }
+]
