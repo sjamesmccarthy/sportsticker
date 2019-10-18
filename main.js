@@ -52,7 +52,7 @@ function API_get_ticker(data_feed) {
 
     /* NFL */
     for (x=0 ; x < mydata[1].matches.length; x++) {
-        ticker_vals_NFL += mydata[1].matches[x].name + ' / Spread' + mydata[1].matches[x].odds.spread + ' / Fav ' + mydata[0].matches[x].odds.favourite_team + ' &mdash; ';
+        ticker_vals_NFL += mydata[1].matches[x].name + ' / Spread' + mydata[1].matches[x].odds.spread + ' / Fav ' + mydata[1].matches[x].odds.favourite_team + ' &mdash; ';
     }
         console.log(ticker_vals_NFL);
         $('.ticker--nfl span').html(ticker_vals_NFL);
